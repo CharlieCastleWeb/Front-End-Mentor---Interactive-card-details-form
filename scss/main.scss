@@ -1,0 +1,43 @@
+
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* VARIABLES */
+
+$red: hsl(0, 100%, 66%); //input errors
+$light-grayish-violet: hsl(270, 3%, 87%);
+$dark-grayish-violet: hsl(279, 6%, 55%);
+$very-dark-violet: hsl(278, 68%, 11%);
+
+//  Linear gradient (active input border): hsl(249, 99%, 64%) to hsl(278, 94%, 30%)
+
+/* TYPOGRAPHY */
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+/* LAYOUT */
+
+.complete-state {
+    display: none;
+}
+
+/* MEDIA QUERIES */
+
+
