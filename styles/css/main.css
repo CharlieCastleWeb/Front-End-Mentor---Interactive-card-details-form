@@ -12,6 +12,42 @@ body {
   font-size: 18px;
 }
 
+.card-number,
+.card-name,
+.card-exp-date,
+.card-cvc {
+  color: white;
+}
+
+.card-number {
+  font-size: 1.2rem;
+  letter-spacing: 0.1em;
+}
+
+.card-name,
+.card-exp-date {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+.card-cvc {
+  font-size: 0.8rem;
+}
+
+.label {
+  font-family: "Space Grotesk", sans-serif;
+  text-transform: uppercase;
+  color: hsl(278deg, 68%, 11%);
+  font-size: 0.9rem;
+  letter-spacing: 0.1em;
+}
+
+#submit {
+  color: white;
+  font-size: 1.2rem;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -22,6 +58,113 @@ body {
 }
 
 /* LAYOUT */
+header {
+  background: url(../../images/bg-main-mobile.png);
+  position: relative;
+  height: 27vh;
+}
+
+.card-front {
+  background: url(../../images/card-logo.svg) no-repeat, url(../../images/bg-card-front.png) no-repeat;
+  background-size: 20%, 290.55px 159.25px;
+  background-position: 15px 15px, 0 0;
+  top: 15vh;
+  left: 2vh;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0 1em 1em 1em;
+}
+
+.card-front div {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.8em;
+}
+
+.card-back {
+  background: url(../../images/bg-card-back.png) no-repeat;
+  background-size: 290.55px 159.25px;
+  top: 5vh;
+  right: 2vh;
+  padding-top: 3.85em;
+  padding-left: 12.8em;
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 290.55px;
+  height: 159.25px;
+}
+
+main {
+  padding: 5em 1em 2em 1em;
+}
+
+input {
+  all: unset;
+  padding: 1em;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  border: 1px solid hsl(270deg, 3%, 87%);
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+input::-moz-placeholder {
+  color: hsl(270deg, 3%, 87%);
+}
+
+input:-ms-input-placeholder {
+  color: hsl(270deg, 3%, 87%);
+}
+
+input::placeholder {
+  color: hsl(270deg, 3%, 87%);
+}
+
+#cardholder-name,
+#card-number {
+  display: block;
+  width: 100%;
+  outline: none;
+}
+
+fieldset {
+  border: none;
+  display: inline-block;
+  width: 50%;
+}
+
+#exp-date-month,
+#exp-date-year {
+  display: inline-block;
+  width: 48%;
+}
+
+.cvc-container {
+  display: inline-block;
+  width: 45.99%;
+  margin-left: 0.5em;
+}
+
+#submit {
+  display: block;
+  margin-top: 1em;
+  padding: 1em 0;
+  border-radius: 10px;
+  background-color: hsl(278deg, 68%, 11%);
+  border: none;
+  width: 100%;
+}
+
+footer {
+  margin-top: 8em;
+}
+
 .complete-state {
   display: none;
 }

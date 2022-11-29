@@ -20,8 +20,10 @@
   <header>
     <div class="card-front">
       <p class="card-number">0000 0000 0000 0000</p>
-      <p class="card-name">Jane Appleseed</p>
-      <p class="card-exp-date">00/00</p>
+      <div>
+        <p class="card-name">Jane Appleseed</p>
+        <p class="card-exp-date">00/00</p>
+      </div>
     </div>
     <div class="card-back">
       <p class="card-cvc">000</p>
@@ -54,19 +56,21 @@
         >
         <input 
           type="text" 
-          placeholder="MM"
+          placeholder="YY"
           name="exp-date-year"
           id="exp-date-year"
         >
       </fieldset>
-      <label for="card-cvc" class="label">cvc</label>
-      <input 
-        type="text" 
-        placeholder="e.g. 123"
-        name="card-cvc"
-        id="card-cvc"
-      >
-      <button>Confirm</button>
+      <div class="cvc-container">
+        <label for="card-cvc" class="label">cvc</label>
+        <input 
+          type="text" 
+          placeholder="e.g. 123"
+          name="card-cvc"
+          id="card-cvc"
+        >
+      </div>
+      <button id="submit">Confirm</button>
     </form>
   </main>
 
