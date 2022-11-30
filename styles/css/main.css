@@ -70,6 +70,11 @@ button {
   color: hsl(228deg, 45%, 44%);
 }
 
+.alert-message {
+  color: hsl(0deg, 100%, 66%);
+  font-size: 0.8rem;
+}
+
 /* LAYOUT */
 body {
   height: 100vh;
@@ -122,11 +127,25 @@ main {
   padding: 5em 1em 2em 1em;
 }
 
+.input-container {
+  margin-top: 1em;
+  transition: all ease-in-out 0.5s;
+}
+
+.alert-message {
+  margin-top: 0.5em;
+  opacity: 1;
+}
+
+.label {
+  margin-top: 0;
+  padding-top: 0;
+}
+
 input {
   all: unset;
   padding: 1em;
   margin-top: 0.5em;
-  margin-bottom: 1em;
   border: 1px solid hsl(270deg, 3%, 87%);
   width: 100%;
   box-sizing: border-box;
@@ -152,22 +171,22 @@ input::placeholder {
   outline: none;
 }
 
+.date-cvc {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
 fieldset {
   border: none;
-  display: inline-block;
-  width: 50%;
+  display: flex;
+  margin-right: 1em;
 }
 
 #exp-date-month,
 #exp-date-year {
-  display: inline-block;
-  width: 48%;
-}
-
-.cvc-container {
-  display: inline-block;
-  width: 45.99%;
-  margin-left: 0.5em;
+  display: block;
 }
 
 button {

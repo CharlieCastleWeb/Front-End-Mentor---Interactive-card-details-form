@@ -84,6 +84,11 @@ button {
     color: hsl(228, 45%, 44%); 
 }
 
+.alert-message {
+    color: $red;
+    font-size: 0.8rem;
+}
+
 /* LAYOUT */
 
 body {
@@ -139,11 +144,25 @@ main {
     padding: 5em 1em 2em 1em;
 }
 
+.input-container {
+    margin-top: 1em;
+    transition: all ease-in-out 0.5s;
+}
+
+.alert-message {
+    margin-top: 0.5em;
+    opacity: 1;
+}
+
+.label {
+    margin-top: 0;
+    padding-top: 0;
+}
+
 input {
     all: unset;
     padding: 1em;
     margin-top: 0.5em;
-    margin-bottom: 1em;
     border: 1px solid $light-grayish-violet;
     width: 100%;
     box-sizing: border-box;
@@ -161,22 +180,29 @@ input::placeholder {
     outline: none;
 }
 
+.date-cvc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center ;
+}
+
 fieldset {
     border: none;
-    display: inline-block;
-    width: 50%;
+    display: flex;
+    margin-right: 1em;
 }
 
 #exp-date-month,
 #exp-date-year {
-    display: inline-block;
-    width: 48%;
+    display: block;
+    // margin-right: 0.5em;
+    // width: 40%;
 }
 
 .cvc-container {
-    display: inline-block;
-    width: 45.99%;
-    margin-left: 0.5em;
+    // margin-left: 0.5em;
+    
 }
 
 button {
@@ -211,7 +237,6 @@ footer {
 .hide-element{
     display: none;
 }
-
 
 /* MEDIA QUERIES */
 
