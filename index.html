@@ -33,7 +33,7 @@
   </header>
 
   <main>
-    <form action="" action="post">
+    <form action="" action="post" id="form">
       <div class="input-container">
         <label for="cardholder-name" class="label">Cardholder name</label>
         <input 
@@ -43,6 +43,12 @@
           id="cardholder-name"
           autocomplete="off"
         >
+        <p
+          class="alert-message"
+          id="alert-card-name"
+        >
+          Can't be blank
+        </p>
       </div>
       <div class="input-container">
         <label for="card-number" class="label">Card number</label>
@@ -54,7 +60,12 @@
           maxlength="19"
           autocomplete="off"
         >
-        <div class="alert-message"><p>Wrong format, numbers only</p></div>
+        <p
+          class="alert-message"
+          id="alert-card-number"
+        >
+          Wrong format, it must be 16 numbers
+        </p>
       </div>
       <div class="date-cvc">
         <div class="input-container">
@@ -75,7 +86,12 @@
               maxlength="2"
             >
           </fieldset>
-            <div class="alert-message"><p>Wrong format, numbers only</p></div>
+            <p
+              class="alert-message"
+              id="alert-card-date"
+            >
+              Month and year must be numbers  
+            </p>
         </div>
         <div class="input-container">
           <label for="card-cvc" class="label">cvc</label>
@@ -86,10 +102,15 @@
             id="card-cvc"
             maxlength="3"
           >
-          <div class="alert-message"><p>Can't be blank</p></div>
+          <p
+            class="alert-message"
+            id="alert-card-cvc"
+          >
+            Can't be blank
+          </p>
         </div>
       </div>
-      <button id="submit">Confirm</button>
+      <button type="submit" id="submit">Confirm</button>
     </form>
   </main>
 
@@ -97,7 +118,7 @@
     <img src="./images/icon-complete.svg" alt="Completed icon">
     <h2>Thank you!</h2>
     <p>We've added your card details</p>
-    <button>Continue</button>
+    <button id="continue">Continue</button>
   </div>
   
   <footer class="attribution">
