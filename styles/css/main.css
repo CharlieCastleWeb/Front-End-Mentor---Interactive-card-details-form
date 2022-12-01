@@ -197,6 +197,10 @@ fieldset {
   display: block;
 }
 
+#exp-date-month {
+  margin-right: 0.5em;
+}
+
 button {
   display: block;
   margin-top: 1.5em;
@@ -230,4 +234,63 @@ footer {
   display: none;
 }
 
-/* MEDIA QUERIES *//*# sourceMappingURL=main.css.map */
+/* MEDIA QUERIES */
+@media (min-width: 750px) {
+  body {
+    flex-direction: row;
+  }
+  header {
+    width: 30%;
+    height: 100vh;
+    background: url(../../images/bg-main-desktop.png);
+  }
+  main {
+    display: flex;
+    height: 100vh;
+    width: 70vw;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  .card-front {
+    top: 22vh;
+    left: 11vh;
+    background-size: 20%, 447px 245px;
+  }
+  .card-back {
+    top: 55vh;
+    left: 22vh;
+    background-size: 447px 245px;
+    padding-top: 6em;
+    padding-left: 19.5em;
+  }
+  .card-front,
+.card-back {
+    width: 447px;
+    height: 245px;
+  }
+  .card-number {
+    font-size: 1.8rem;
+    letter-spacing: 0.15em;
+    margin-bottom: 0.5em;
+  }
+  .card-name,
+.card-exp-date {
+    font-size: 1rem;
+    letter-spacing: 0.18em;
+    margin-bottom: 0.2em;
+  }
+  .card-cvc {
+    font-size: 1.2rem;
+    letter-spacing: 0.15em;
+  }
+  form,
+.complete-state {
+    width: 45%;
+  }
+  footer {
+    position: absolute;
+    bottom: 0;
+    left: 55%;
+  }
+}/*# sourceMappingURL=main.css.map */

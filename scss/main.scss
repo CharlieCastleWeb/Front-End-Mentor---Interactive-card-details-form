@@ -17,6 +17,9 @@ $very-dark-violet: hsl(278, 68%, 11%);
 $mobile-card-width: calc(447px*0.65);
 $mobile-card-height: calc(245px*0.65);
 
+$desktop-card-width: calc(447px*1);
+$desktop-card-height: calc(245px*1);
+
 //  Linear gradient (active input border): hsl(249, 99%, 64%) to hsl(278, 94%, 30%)
 
 /* TYPOGRAPHY */
@@ -152,14 +155,10 @@ main {
 .alert-message {
     margin-top: 0.5em;
     display: none;
-    // visibility: hidden;
-    // opacity: 0;
 }
 
 .alert-message-show {
     display: block;
-    // visibility: visible;
-    // opacity: 1;
 }
 
 .label {
@@ -208,13 +207,10 @@ fieldset {
 #exp-date-month,
 #exp-date-year {
     display: block;
-    // margin-right: 0.5em;
-    // width: 40%;
 }
 
-.cvc-container {
-    // margin-left: 0.5em;
-    
+#exp-date-month {
+    margin-right: 0.5em;
 }
 
 button {
@@ -252,4 +248,74 @@ footer {
 
 /* MEDIA QUERIES */
 
+@media (min-width: 750px) {
+    
+    body {
+        flex-direction: row;
+    }
 
+    header {
+        width: 30%;
+        height: 100vh;
+        background: url(../../images/bg-main-desktop.png);
+    }
+
+    main {
+        display: flex;
+        height: 100vh;
+        width: 70vw;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .card-front {
+        top: 22vh;
+        left: 11vh;
+        background-size: 20%, $desktop-card-width $desktop-card-height;
+    }
+
+    .card-back {
+        top: 55vh;
+        left: 22vh;
+        background-size: $desktop-card-width $desktop-card-height;
+        padding-top: 6em;
+        padding-left: 19.5em;
+    }
+
+    .card-front,
+    .card-back {
+        width: $desktop-card-width;
+        height: $desktop-card-height;
+    }
+
+    .card-number {
+        font-size: 1.8rem;
+        letter-spacing: 0.15em;
+        margin-bottom: 0.5em;
+    }
+    
+    .card-name,
+    .card-exp-date {
+        font-size: 1rem;
+        letter-spacing: 0.18em;
+        margin-bottom: 0.2em;
+    }
+    
+    .card-cvc {
+        font-size: 1.2rem;
+        letter-spacing: 0.15em;
+    }
+
+    form,
+    .complete-state {
+        width: 45%;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0;
+        left: 55%;
+    }
+
+}

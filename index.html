@@ -16,111 +16,110 @@
 
 </head>
 <body>
-
-  <header>
-    <div class="card-front">
-      <p class="card-number">0000 0000 0000 0000</p>
-      <div>
-        <p class="card-name">Jane Appleseed</p>
-        <p class="card-exp-date">
-          <span class="card-exp-month">00</span>/<span class="card-exp-year">00</span>
-        </p>
-      </div>
-    </div>
-    <div class="card-back">
-      <p class="card-cvc">000</p>
-    </div>
-  </header>
-
-  <main>
-    <form action="" action="post" id="form">
-      <div class="input-container">
-        <label for="cardholder-name" class="label">Cardholder name</label>
-        <input 
-          type="text" 
-          placeholder="e.g. Jane Appleseed"
-          name="cardholder-name"
-          id="cardholder-name"
-          autocomplete="off"
-        >
-        <p
-          class="alert-message"
-          id="alert-card-name"
-        >
-          Can't be blank
-        </p>
-      </div>
-      <div class="input-container">
-        <label for="card-number" class="label">Card number</label>
-        <input 
-          type="text" 
-          placeholder="e.g. 1234 5678 9123 0000"
-          name="card-number"
-          id="card-number"
-          maxlength="19"
-          autocomplete="off"
-        >
-        <p
-          class="alert-message"
-          id="alert-card-number"
-        >
-          Wrong format, it must be 16 numbers
-        </p>
-      </div>
-      <div class="date-cvc">
-        <div class="input-container">
-          <legend class="label">Exp. date (mm/yy)</legend>
-          <fieldset>
-            <input 
-              type="text" 
-              placeholder="MM"
-              name="exp-date-month"
-              id="exp-date-month"
-              maxlength="2"
-            >
-            <input 
-              type="text" 
-              placeholder="YY"
-              name="exp-date-year"
-              id="exp-date-year"
-              maxlength="2"
-            >
-          </fieldset>
-            <p
-              class="alert-message"
-              id="alert-card-date"
-            >
-              Month and year must be numbers  
-            </p>
+  
+    <header>
+      <div class="card-front">
+        <p class="card-number">0000 0000 0000 0000</p>
+        <div>
+          <p class="card-name">Jane Appleseed</p>
+          <p class="card-exp-date">
+            <span class="card-exp-month">00</span>/<span class="card-exp-year">00</span>
+          </p>
         </div>
+      </div>
+      <div class="card-back">
+        <p class="card-cvc">000</p>
+      </div>
+    </header>
+
+    <main>
+      <form action="" action="post" id="form">
         <div class="input-container">
-          <label for="card-cvc" class="label">cvc</label>
+          <label for="cardholder-name" class="label">Cardholder name</label>
           <input 
             type="text" 
-            placeholder="e.g. 123"
-            name="card-cvc"
-            id="card-cvc"
-            maxlength="3"
+            placeholder="e.g. Jane Appleseed"
+            name="cardholder-name"
+            id="cardholder-name"
+            autocomplete="off"
           >
           <p
             class="alert-message"
-            id="alert-card-cvc"
+            id="alert-card-name"
           >
             Can't be blank
           </p>
         </div>
+        <div class="input-container">
+          <label for="card-number" class="label">Card number</label>
+          <input 
+            type="text" 
+            placeholder="e.g. 1234 5678 9123 0000"
+            name="card-number"
+            id="card-number"
+            maxlength="19"
+            autocomplete="off"
+          >
+          <p
+            class="alert-message"
+            id="alert-card-number"
+          >
+            Wrong format, it must be 16 numbers
+          </p>
+        </div>
+        <div class="date-cvc">
+          <div class="input-container">
+            <legend class="label">Exp. date (mm/yy)</legend>
+            <fieldset>
+              <input 
+                type="text" 
+                placeholder="MM"
+                name="exp-date-month"
+                id="exp-date-month"
+                maxlength="2"
+              >
+              <input 
+                type="text" 
+                placeholder="YY"
+                name="exp-date-year"
+                id="exp-date-year"
+                maxlength="2"
+              >
+            </fieldset>
+              <p
+                class="alert-message"
+                id="alert-card-date"
+              >
+                Month and year must be numbers  
+              </p>
+          </div>
+          <div class="input-container">
+            <label for="card-cvc" class="label">cvc</label>
+            <input 
+              type="text" 
+              placeholder="e.g. 123"
+              name="card-cvc"
+              id="card-cvc"
+              maxlength="3"
+            >
+            <p
+              class="alert-message"
+              id="alert-card-cvc"
+            >
+              Can't be blank
+            </p>
+          </div>
+        </div>
+        <button type="submit" id="submit">Confirm</button>
+      </form>
+      <div class="complete-state hide-element">
+        <img src="./images/icon-complete.svg" alt="Completed icon">
+        <h2>Thank you!</h2>
+        <p>We've added your card details</p>
+        <button id="continue">Continue</button>
       </div>
-      <button type="submit" id="submit">Confirm</button>
-    </form>
-  </main>
+    </main>
 
-  <div class="complete-state hide-element">
-    <img src="./images/icon-complete.svg" alt="Completed icon">
-    <h2>Thank you!</h2>
-    <p>We've added your card details</p>
-    <button id="continue">Continue</button>
-  </div>
-  
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://carloscastillo.dev/">Carlos Castillo</a>.
