@@ -14,8 +14,8 @@ $light-grayish-violet: hsl(270, 3%, 87%);
 $dark-grayish-violet: hsl(279, 6%, 55%);
 $very-dark-violet: hsl(278, 68%, 11%);
 
-$mobile-card-width: calc(447px*0.65);
-$mobile-card-height: calc(245px*0.65);
+$mobile-card-width: calc(447px*0.6);
+$mobile-card-height: calc(245px*0.6);
 
 $desktop-card-width: calc(447px*1);
 $desktop-card-height: calc(245px*1);
@@ -37,19 +37,19 @@ body {
 }
 
 .card-number {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     letter-spacing: 0.1em;
 }
 
 .card-name,
 .card-exp-date {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     text-transform: uppercase;
     letter-spacing: 0.15em;
 }
 
 .card-cvc {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
 }
 
 .label {
@@ -107,7 +107,7 @@ body {
 header {
     background: url(../../images/bg-main-mobile.png);
     position: relative;
-    height: 34vh;
+    min-height: 31vh;
 }
 
 
@@ -116,7 +116,7 @@ header {
                 url(../../images/bg-card-front.png) no-repeat; 
     background-size: 20%, $mobile-card-width $mobile-card-height;
     background-position: 15px 15px, 0 0;                
-    top: 16.5vh;
+    top: 15.6vh;
     left: 2vh;
     z-index: 2;
     display: flex;
@@ -136,8 +136,8 @@ header {
     background-size: $mobile-card-width $mobile-card-height;
     top: 3vh;
     right: 2vh;
-    padding-top: 3.85em;
-    padding-left: 12.8em;
+    padding-top: 3.6em;
+    padding-left: 12em;
 }
 
 .card-front,
@@ -148,20 +148,20 @@ header {
 }
 
 main {
-    padding: 0em 1em 2em 1em;
+    padding: 0em 1em 0em 1em;
 }
 
 form {
-    margin-top: 5em;
+    margin-top: 4em;
 }
 
 .input-container {
-    margin-top: 1em;
+    margin-top: 0.7em;
     transition: opacity ease-in-out 0.5s;
 }
 
 .alert-message {
-    margin-top: 0.5em;
+    margin-top: 0.1em;
     display: none;
 }
 
@@ -223,7 +223,7 @@ fieldset {
 
 button {
     display: block;
-    margin-top: 1.5em;
+    margin-top: 1em;
     padding: 1em 0;
     border-radius: 10px;
     background-color: $very-dark-violet;

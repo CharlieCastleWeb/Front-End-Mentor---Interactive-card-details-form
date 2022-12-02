@@ -20,19 +20,19 @@ body {
 }
 
 .card-number {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   letter-spacing: 0.1em;
 }
 
 .card-name,
 .card-exp-date {
-  font-size: 0.7rem;
+  font-size: 0.6rem;
   text-transform: uppercase;
   letter-spacing: 0.15em;
 }
 
 .card-cvc {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
 }
 
 .label {
@@ -89,14 +89,14 @@ body {
 header {
   background: url(../../images/bg-main-mobile.png);
   position: relative;
-  height: 34vh;
+  min-height: 31vh;
 }
 
 .card-front {
   background: url(../../images/card-logo.svg) no-repeat, url(../../images/bg-card-front.png) no-repeat;
-  background-size: 20%, 290.55px 159.25px;
+  background-size: 20%, 268.2px 147px;
   background-position: 15px 15px, 0 0;
-  top: 16.5vh;
+  top: 15.6vh;
   left: 2vh;
   z-index: 2;
   display: flex;
@@ -113,35 +113,35 @@ header {
 
 .card-back {
   background: url(../../images/bg-card-back.png) no-repeat;
-  background-size: 290.55px 159.25px;
+  background-size: 268.2px 147px;
   top: 3vh;
   right: 2vh;
-  padding-top: 3.85em;
-  padding-left: 12.8em;
+  padding-top: 3.6em;
+  padding-left: 12em;
 }
 
 .card-front,
 .card-back {
   position: absolute;
-  width: 290.55px;
-  height: 159.25px;
+  width: 268.2px;
+  height: 147px;
 }
 
 main {
-  padding: 0em 1em 2em 1em;
+  padding: 0em 1em 0em 1em;
 }
 
 form {
-  margin-top: 5em;
+  margin-top: 4em;
 }
 
 .input-container {
-  margin-top: 1em;
+  margin-top: 0.7em;
   transition: opacity ease-in-out 0.5s;
 }
 
 .alert-message {
-  margin-top: 0.5em;
+  margin-top: 0.1em;
   display: none;
 }
 
@@ -211,7 +211,7 @@ fieldset {
 
 button {
   display: block;
-  margin-top: 1.5em;
+  margin-top: 1em;
   padding: 1em 0;
   border-radius: 10px;
   background-color: hsl(278deg, 68%, 11%);
