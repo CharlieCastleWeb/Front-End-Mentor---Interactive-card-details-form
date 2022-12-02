@@ -39,13 +39,17 @@ body {
   font-family: "Space Grotesk", sans-serif;
   text-transform: uppercase;
   color: hsl(278deg, 68%, 11%);
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   letter-spacing: 0.1em;
+}
+
+input[type=text] {
+  font-size: 0.9rem;
 }
 
 button {
   color: white;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .complete-state {
@@ -72,7 +76,7 @@ button {
 
 .alert-message {
   color: hsl(0deg, 100%, 66%);
-  font-size: 0.8rem;
+  font-size: 0.7rem;
 }
 
 /* LAYOUT */
@@ -85,14 +89,14 @@ body {
 header {
   background: url(../../images/bg-main-mobile.png);
   position: relative;
-  height: 27vh;
+  height: 34vh;
 }
 
 .card-front {
   background: url(../../images/card-logo.svg) no-repeat, url(../../images/bg-card-front.png) no-repeat;
   background-size: 20%, 290.55px 159.25px;
   background-position: 15px 15px, 0 0;
-  top: 15vh;
+  top: 16.5vh;
   left: 2vh;
   z-index: 2;
   display: flex;
@@ -110,7 +114,7 @@ header {
 .card-back {
   background: url(../../images/bg-card-back.png) no-repeat;
   background-size: 290.55px 159.25px;
-  top: 5vh;
+  top: 3vh;
   right: 2vh;
   padding-top: 3.85em;
   padding-left: 12.8em;
@@ -124,7 +128,11 @@ header {
 }
 
 main {
-  padding: 5em 1em 2em 1em;
+  padding: 0em 1em 2em 1em;
+}
+
+form {
+  margin-top: 5em;
 }
 
 .input-container {
@@ -148,7 +156,7 @@ main {
 
 input {
   all: unset;
-  padding: 1em;
+  padding: 0.7em;
   margin-top: 0.5em;
   border: 1px solid hsl(270deg, 3%, 87%);
   width: 100%;
